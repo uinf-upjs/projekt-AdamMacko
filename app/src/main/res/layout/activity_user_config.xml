@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nastavenia používateľa"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Meno"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewTitle"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/editTextAge"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Vek"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextName"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:id="@+id/editTextWeight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Váha (kg)"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextAge"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:id="@+id/editTextHeight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Výška (cm)"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextWeight"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/textViewGoals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ciele pre jednotlivé aktivity"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/editTextHeight"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/editTextGoalActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Cieľ pre aktivitu (min.)"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewGoals"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:id="@+id/editTextGoalNutrition"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Cieľ pre stravu (kcal)"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextGoalActivity"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:id="@+id/editTextGoalMood"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Cieľ pre pocity (hodnotenie)"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextGoalNutrition"
+        android:layout_marginTop="10dp" />
+    <EditText
+        android:id="@+id/editTextWater"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Denny príjem tekutín cieľ"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextGoalMood"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Uložiť"
+        android:backgroundTint="@color/button_background"
+        android:textColor="@color/button_text"
+        app:layout_constraintTop_toBottomOf="@+id/editTextWater"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,70 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="187dp"
+        android:layout_height="58dp"
+        android:text="Aktivita"
+        android:backgroundTint="@color/button_background"
+        android:textColor="@color/button_text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="150dp"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="187dp"
+        android:layout_height="58dp"
+        android:text="Strava"
+        android:backgroundTint="@color/button_background"
+        android:textColor="@color/button_text"
+        app:layout_constraintTop_toBottomOf="@id/button1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="36dp"/>
+
+
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="187dp"
+        android:layout_height="58dp"
+        android:text="Cyklus"
+        android:backgroundTint="@color/button_background"
+        android:textColor="@color/button_text"
+        app:layout_constraintTop_toBottomOf="@id/button2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="36dp"/>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="187dp"
+        android:layout_height="58dp"
+        android:text="Pocity"
+        android:backgroundTint="@color/button_background"
+        android:textColor="@color/button_text"
+        app:layout_constraintTop_toBottomOf="@id/button4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="36dp"/>
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="187dp"
+        android:layout_height="58dp"
+        android:text="Pitný režim"
+        android:backgroundTint="@color/button_background"
+        android:textColor="@color/button_text"
+        app:layout_constraintTop_toBottomOf="@id/button5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="36dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
